@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Egypt HR SOPs – Interactive</title>
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;📘&lt;/text&gt;&lt;/svg&gt;">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><h1 class="main">Egypt HR SOPs</h1></header>
+<div class="bar"><div class="in"><input id="q" type="search" placeholder="Search the SOP (e.g. IOA, payroll, macro)…" aria-label="Search"><button id="ex">Expand all</button><button id="co">Collapse all</button></div></div>
+<main><nav class="toc"><a href="#s1" data-s="1"><b>1</b> Pre-Onboarding</a><a href="#s2" data-s="2"><b>2</b> Post-Onboarding</a><a href="#s3" data-s="3"><b>3</b> Exit Management</a><a href="#s4" data-s="4"><b>4</b> Probation</a><a href="#s5" data-s="5"><b>5</b> Leave Management</a><a href="#s6" data-s="6"><b>6</b> Payroll and Payroll SLA</a><a href="#s7" data-s="7"><b>7</b> HR Service Desk</a><a href="#s8" data-s="8"><b>8</b> Leave Management SLA</a><a href="#s9" data-s="9"><b>9</b> Soft Joining (SJ)</a><a href="#s10" data-s="10"><b>10</b> Document Renewals</a><a href="#s11" data-s="11"><b>11</b> Ex-Employee Verification</a><a href="#s12" data-s="12"><b>12</b> Master Data Changes</a><a href="#s13" data-s="13"><b>13</b> HR Letters</a><a href="#s14" data-s="14"><b>14</b> Weekly Employee Master Data Report</a><a href="#s15" data-s="15"><b>15</b> VBA Automation Reference</a><a href="#s16" data-s="16"><b>16</b> Hard-Coded Items to Update at Handover</a><a href="#s17" data-s="17"><b>17</b> Known Risks</a></nav><details class="sec" id="s1"><summary><span class="num">1</span><span class="t">Pre-Onboarding</span><span class="cnt">8</span></summary><div class="body"><ul>
+<li><p>Send the pre-onboarding email, including the Dress Code Policy and New Hire Introduction Form; request completion of the form and photo, confirm expected joining date and marital status, and provide the joining-document list.</p></li>
+<li><p>Create the Soft Joining record in PSA.</p></li>
+<li><p>Send the initial New Hire Intimation at least 15 days before the joining date to the agreed To/CC recipients, including the employee’s direct manager and E-Square Support.</p></li>
+<li><p>Use TA-provided information for reporting structure and cost allocation.</p></li>
+<li><p>Prepare the employment agreement using the Egypt process. In the normal case, the employee signs on the first working day after the employee code is generated and the agreement is prepared through Mail Merge. Some positions may require pre-joining signature at TA’s request.</p></li>
+<li><p>Send the Pre-Joining Email 4–5 days before joining, confirming date, time, office reception instructions, office address, and required documents.</p></li>
+<li><p>For a candidate no-show, follow the agreed ME process: obtain confirmation, inform the Business Team with the reason, notify HR Notifications, and update the PSA Soft Joining status to Candidate Not Joining and exit the candidate from the system through the applicable approvals.</p></li>
+<li><p>For a joining-date change, confirm the revised date with TA and send an updated intimation to the same recipients.</p></li>
+</ul></div></details><details class="sec" id="s2"><summary><span class="num">2</span><span class="t">Post-Onboarding</span><span class="cnt">10</span></summary><div class="body"><ul>
+<li><p>Confirm attendance in PSA, complete the Candidate Onboarding Checklist, and generate the employee code.</p></li>
+<li><p>Extract workforce data and refresh the master sheet by running the <strong>Run_Protiviti_Extraction</strong> macro (<a class="xref" href="#s15" data-s="15">Section 15</a>). It exports the Employee Master and Salary Report from PSA, refreshes the Power Query, and rebuilds the Arabic job-title, department and management columns.</p></li>
+<li><p>Check the employee’s photograph against the dress code, then save it in the Shared Folder using the employee’s name and employee code.</p></li>
+<li><p>Prepare four copies of the employment agreement, work receipt acknowledgment, data confidentiality acknowledgment, and Form 1 for social insurance.</p></li>
+<li><p>Send the employee the comprehensive personal data form.</p></li>
+<li><p>Send the Learning &amp; Knowledge Resources Email on the first day after joining procedures are completed; the content depends on the employee classification (Intern, Enablement, or Professional).</p></li>
+<li><p>Send the Confirmed New Hire Intimation to the same recipients as the initial intimation on the first working day, after the Learning &amp; Knowledge Resources Email.</p></li>
+<li><p>Send the consolidated onboarding email on the first day, covering the Egypt-specific actions: EDCF, bank details, Egypt mobile number, email signature, photo, access card, Skills Portal, ProtiPedia, and HRMS app/PSA access.</p></li>
+<li><p>On the joining date, run the <strong>Create_New_Joiner_Emails</strong> macro (<a class="xref" href="#s15" data-s="15">Section 15</a>). For every employee whose Contract Start Date is today it opens two draft emails: the onboarding email (To: employee’s official email; CC: Margreat Ayad and Sara Awad; EDCF attached) and the Learning &amp; Knowledge Resources email (template chosen by Intern / Enablement Services or Business Support / Professional Services). Review each draft before sending; nothing is sent automatically.</p></li>
+<li><p>Send employee data to Margreat Ayad, who handles Protiviti Egypt medical insurance, on the employee’s first day.</p></li>
+</ul></div></details><details class="sec" id="s3"><summary><span class="num">3</span><span class="t">Exit Management</span><span class="cnt">11</span></summary><div class="body"><details class="sub"><summary>Voluntary resignation and exit formalities</summary><div class="body"><ul>
+<li><p>Receive the HRMS resignation notification and inform the respective HRBP immediately.</p></li>
+<li><p>Conduct the exit interview first, then share the employee’s comments/reasons with the CMD and HRBP to determine whether retention should be explored or exit formalities should proceed.</p></li>
+<li><p>The employee submits the resignation in HRMS; the Reporting Manager approves it and the manager responsible for setting the last working day confirms the LWD. The request then comes to the user for approval in HRMS.</p></li>
+<li><p>After approval and LWD confirmation, send the Exit Formalities email with the Egypt-specific requirements: HRMS resignation/approvals, Exit Interview Questionnaire, leave history, IT data backup, timesheet through LWD, Mandatory Exit Checklist and approvals, return of company assets, and F&amp;F timing/bank-account guidance.</p></li>
+<li><p>Complete only the HR section of the Mandatory Exit Checklist; do not represent this as checking all departments’ tasks.</p></li>
+<li><p>Review the employee’s Exit Interview Questionnaire in HRMS, enter the outcome of the earlier exit interview in the Comments field, and approve the responses.</p></li>
+<li><p>Prepare the Experience Letter and Clearance Certificate, as applicable, for delivery on the LWD once clearance requirements are met. The Experience Letter is used in Egypt rather than a Relieving Letter. Generate it with the <strong>Experience_Letter</strong> macro (<a class="xref" href="#s13" data-s="13">Section 13</a>); the Last Working Date is read from column AG of the master sheet, so confirm that value first.</p></li>
+<li><p>Sign and obtain the employee’s signature on the required exit documents, including resignation, Form 6, and relevant declarations/acknowledgments.</p></li>
+<li><p>Ensure the employee submits the timesheet through the LWD.</p></li>
+<li><p>Send Exit Intimation to the same recipients as the New Hire Intimation at least 5 days before the LWD.</p></li>
+<li><p>Send Nader and Rashmi the employee’s remaining leave balance and any relevant training recovery details. The user’s role ends after sending these inputs; Finance handles the F&amp;F calculation and payment.</p></li>
+</ul></div></details></div></details><details class="sec" id="s4"><summary><span class="num">4</span><span class="t">Probation</span><span class="cnt">2</span></summary><div class="body"><ul>
+<li><p>Non-confirmation: a meeting is held with the employee to explain why employment will not continue; the user is informed after the meeting and signs the necessary termination documents.</p></li>
+<li><p>Auto-confirmation: if the Reporting Manager does not respond to the final review by the confirmation date, the employee is automatically confirmed.</p></li>
+</ul></div></details><details class="sec" id="s5"><summary><span class="num">5</span><span class="t">Leave Management</span><span class="cnt">4</span></summary><div class="body"><ul>
+<li><p>PSA calculates leave balances and entitlements automatically. Employees submit leave requests through PSA; the direct manager approves first, then the request reaches the user.</p></li>
+<li><p>Review sick leave against the sick leave policy and all other leave types against the applicable leave policy, then approve or reject in PSA.</p></li>
+<li><p>If an error is found before approval, reject the request and ask the employee to resubmit it from scratch.</p></li>
+<li><p>If an error is found after approval, the employee submits a revoke request; the direct manager approves first, then the user. The employee then submits a corrected leave request.</p></li>
+</ul></div></details><details class="sec" id="s6"><summary><span class="num">6</span><span class="t">Payroll and Payroll SLA</span><span class="cnt">5</span></summary><div class="body"><ul>
+<li><p>Egypt payroll is handled manually using Excel; payroll is not processed in PSA.</p></li>
+<li><p>Send monthly payroll inputs to Nader and Rashmi, covering new joiners, resignations, additions, and deductions.</p></li>
+<li><p>For resigned employees, include the LWD and remaining leave balance in the payroll input sheet.</p></li>
+<li><p>Send new or updated bank details to Finance for payroll use; the user does not update PSA bank details for Egypt payroll purposes.</p></li>
+<li><p>Payroll cut-off date: the 20th of each month. Salary is generally paid between the 25th and 30th; there is no fixed payment date.</p></li>
+</ul></div></details><details class="sec" id="s7"><summary><span class="num">7</span><span class="t">HR Service Desk</span><span class="cnt">4</span></summary><div class="body"><ul>
+<li><p>Handle tickets using the same general workflow as the ME SOP: log in, provide an initial response within SLA, move the ticket to Work in Progress, determine the appropriate action, protect confidential information, use private notes for internal communication, obtain required approvals, and respond based on approved policies.</p></li>
+<li><p>Document the resolution in the ticket and close it when the issue has been addressed; send a closure notification summarizing the resolution and inviting feedback.</p></li>
+<li><p>Set the ticket to Resolved when the query is resolved. Move it to Pending without prior approval only when resolution requires intervention from another department; otherwise follow the usual approval/status rules.</p></li>
+<li><p>Egypt weekends (Friday and Saturday) and official public holidays are excluded from SLA calculation.</p></li>
+</ul></div></details><details class="sec" id="s8"><summary><span class="num">8</span><span class="t">Leave Management SLA</span></summary><div class="body"><p>Same as the ME SLA; no Egypt-specific changes were identified during the review.</p></div></details><details class="sec" id="s9"><summary><span class="num">9</span><span class="t">Soft Joining (SJ)</span><span class="cnt">6</span></summary><div class="body"><ul>
+<li><p>Review employee data field by field during Soft Joining in PSA.</p></li>
+<li><p>The formal name in PSA must match the national ID; Preferred Name comes from the New Hire Introduction Form.</p></li>
+<li><p>Apply the same Group DOJ and transfer-status rules as the ME team.</p></li>
+<li><p>Use TA data for Source of Hire and Cost Allocation.</p></li>
+<li><p>Review all mandatory-document details, not only whether documents are present.</p></li>
+<li><p>The user handles the Egypt Soft Joining process from start to finish.</p></li>
+</ul></div></details><details class="sec" id="s10"><summary><span class="num">10</span><span class="t">Document Renewals</span><span class="cnt">16</span></summary><div class="body"><details class="sub"><summary>ME Resources IOA tracking, renewal and closure (ME Corridor)</summary><div class="body"><ul>
+<li><p>The <strong>ME Corridor.xlsx</strong> tracker (HR owner’s OneDrive) holds one row per IOA period. Three Power Automate flows read its table, email the HR owner, and write a “sent” flag back to the same row so that each email is sent once.</p></li>
+</ul><div class="tw"><table>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 17%"/>
+<col style="width: 32%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Flow</strong></th>
+<th><strong>Runs</strong></th>
+<th><strong>Triggers an email when</strong></th>
+<th><strong>Result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>IOA Expiry Reminder</strong></td>
+<td>Every 30 days, 10:00 and 12:00 (Cairo time)</td>
+<td>IOA End Date is between today and 30 days ahead, Status does not contain “InActive”, and Renewal Notification Sent is not “Yes”.</td>
+<td>High-importance email to the HR owner with employee, IOA number, end date, ME Reporting Manager and MD. Sets Renewal Notification Sent = Yes.</td>
+</tr>
+<tr class="even">
+<td><strong>New Employee Notification</strong></td>
+<td>Every hour</td>
+<td>Received On equals today and “Notification Sent – New Employee Added” is blank.</td>
+<td>High-importance email with employee code, name, ME work location, IOA start/end dates, manager and MD. Sets the flag to Yes.</td>
+</tr>
+<tr class="odd">
+<td><strong>Employee Profile Closure Notification</strong></td>
+<td>Every hour</td>
+<td>Closure Entry Date equals today and Notification Sent Closure is blank.</td>
+<td>Email with employee code, name, IOA number, IOA dates, LWD, manager and MD. Sets Notification Sent Closure = Yes.</td>
+</tr>
+</tbody>
+</table></div><ul>
+<li><p><strong>New ME Corridor resource:</strong> add a row with the IOA details and set <strong>Received On</strong> to today. The New Employee Notification flow emails the HR owner, who takes the necessary action.</p></li>
+<li><p><strong>Expiry alert:</strong> the IOA Expiry Reminder emails the HR owner, not the MD. The HR owner forwards it to the ME Reporting MD named in the email to confirm whether the IOA is renewed for the same duration or changed.</p></li>
+<li><p><strong>Renewal:</strong> after the MD confirms, add a <strong>new row</strong> for the same employee with the agreed IOA Start Date and IOA End Date, Received On = today, and all notification flags blank. The New Employee Notification flow then sends the renewal details. Keep the old row as history.</p></li>
+<li><p><strong>Profile closure:</strong> enter the LWD / Profile Closure Date and set Closure Entry Date to today, leaving Notification Sent Closure blank. The Closure flow then notifies the HR owner. If an email has not arrived, run the flow manually from Power Automate.</p></li>
+<li><p><strong>Data rules:</strong> dates must be real Excel dates, not text; flag columns must be blank (not “No”) until the flow sets them; each row needs a unique IOA No. (the closure flow finds the row by IOA No.); do not rename table columns.</p></li>
+</ul></div></details><details class="sub"><summary>Employment contract renewal</summary><div class="body"><ul>
+<li><p>Power Automate identifies contracts expiring within the next 60 days and emails the employee’s manager for approval, copying the HRBP and CMD.</p></li>
+<li><p>Manager approval is sufficient; no additional HRBP or CMD approval is required.</p></li>
+<li><p>After approval, run the <strong>GenerateRenewals</strong> macro (<a class="xref" href="#s15" data-s="15">Section 15</a>). Choose “Yes” and enter the employee code to renew one employee, or “No” to process everyone eligible. The contract is generated from Renewal_Template.docx and saved as a PDF in the Renewals\Final folder.</p></li>
+<li><p>Email the PDF to the employee for printing, signing, scanning, and returning, and ask them to bring the hard copy to the office.</p></li>
+<li><p>Normal mode picks up Active - Confirmed employees whose contract anniversary falls within the next 60 days, or passed within the last 272 days. Employee-specific mode ignores the 60-day limit.</p></li>
+<li><p>Check Renewal_Log after every run. Rows marked <strong>Manual Review</strong> (missing Arabic name, national ID not 14 digits, missing address or gender, or Gross not equal to the sum of its components) must be fixed in the master sheet and the macro re-run. A contract already marked Generated for the same period is not created again.</p></li>
+<li><p>New employment contracts are prepared by Mail Merge, not by this macro.</p></li>
+</ul></div></details></div></details><details class="sec" id="s11"><summary><span class="num">11</span><span class="t">Ex-Employee Verification</span><span class="cnt">3</span></summary><div class="body"><ul>
+<li><p>Respond to questions received about former employees based on the request received.</p></li>
+<li><p>There is no fixed response template in use.</p></li>
+<li><p>Refer issues or questions requiring clarification to the HRBP.</p></li>
+</ul></div></details><details class="sec" id="s12"><summary><span class="num">12</span><span class="t">Master Data Changes</span><span class="cnt">2</span></summary><div class="body"><ul>
+<li><p>For a data-change request received through HR Service Desk, make the requested change and close the ticket.</p></li>
+<li><p>Employees can update some personal details themselves using their available self-service permissions.</p></li>
+</ul></div></details><details class="sec" id="s13"><summary><span class="num">13</span><span class="t">HR Letters</span><span class="cnt">7</span></summary><div class="body"><div class="tw"><table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 17%"/>
+<col style="width: 32%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Letter</strong></th>
+<th><strong>Macro</strong></th>
+<th><strong>You are asked for</strong></th>
+<th><strong>Pulled from the master sheet</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HR Reference Letter</td>
+<td>HR_Letter</td>
+<td>Employee code or name; which lines to show (tick boxes); addressee and country.</td>
+<td>Name, code, Group Join Date, designation, department, national ID, social insurance number, gross salary, gender.</td>
+</tr>
+<tr class="even">
+<td>Embassy / Visa Letter</td>
+<td>Embassy_Letter</td>
+<td>Employee; name as in passport; passport number; embassy and its country; destination; travel start and end dates.</td>
+<td>Nationality, social insurance number, Group Join Date, designation, department, division, gross salary, gender.</td>
+</tr>
+<tr class="odd">
+<td>Experience Letter</td>
+<td>Experience_Letter</td>
+<td>Employee code or name.</td>
+<td>Name, code, designation, department, Group Join Date, location (default Egypt), Last Working Date from column AG.</td>
+</tr>
+</tbody>
+</table></div><ul>
+<li><p>Each macro saves a PDF in the HR Letters\Done folder named “Letter type – Name – date_time”. Review the PDF before sending; the letters carry a blank signature line only.</p></li>
+<li><p>The title (Mr. / Ms.) comes from the Gender column. If Gender is missing the macro asks; cancelling that question defaults to “Ms.”, so re-check the letter.</p></li>
+<li><p>If a needed field is empty in the master sheet, the macro asks for it in a pop-up. The HR and Embassy letters continue on a blank page if their template is missing; the Experience Letter stops.</p></li>
+<li><p>The HR Letter tick-box form is created once by running <strong>Setup_Form</strong>, which requires “Trust access to the VBA project object model” in Excel’s Trust Center.</p></li>
+</ul></div></details><details class="sec" id="s14"><summary><span class="num">14</span><span class="t">Weekly Employee Master Data Report</span><span class="cnt">11</span></summary><div class="body"><ul>
+<li><p>Run <strong>Run_Employee_Master_Export</strong> once a week. It exports the Employee Master from PSA (Status = ALL) and copies it to the Contracts\Extraction folder.</p></li>
+<li><p>The macro rebuilds three sheets from the export: <strong>Active &amp; On Notice</strong>, <strong>Resigned 2026</strong> and <strong>Transfer 2026</strong>. Manual notes on these sheets are lost on every run.</p></li>
+<li><p>It then asks whether there are employees in the pipeline; answer Yes to enter each candidate’s details (name, preferred name, joining date, designation, L1, L2, manager, MD, locations, email) into the In The Pipeline table.</p></li>
+<li><p>Finally it opens a draft email with a clean, values-only copy of the workbook attached (Master Data-Egypt-date.xlsx). Check the counts and attachment, then send it manually.</p></li>
+</ul><div class="tw"><table>
+<colgroup>
+<col style="width: 26%"/>
+<col style="width: 73%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Count in the email</strong></th>
+<th><strong>Rule</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Active employees</td>
+<td>Employee Category is not Intern and status is Active - Confirmed or Active - Probation.</td>
+</tr>
+<tr class="even">
+<td>Interns</td>
+<td>Employee Category = Intern (counted separately, not in Active).</td>
+</tr>
+<tr class="odd">
+<td>Employees on Notice</td>
+<td>Status = On Notice.</td>
+</tr>
+<tr class="even">
+<td>Transfer cases</td>
+<td>All rows on Transfer 2026: status contains “Transferred”, plus PMFM-7100 and PMFM-7156 (shown as “Transferred to KSA”).</td>
+</tr>
+<tr class="odd">
+<td>Resigned cases</td>
+<td>Status In-Active with a Last Working Date in 2026; Interns are excluded.</td>
+</tr>
+<tr class="even">
+<td>Candidates in the Pipeline</td>
+<td>Number of rows in the In The Pipeline table.</td>
+</tr>
+</tbody>
+</table></div><ul>
+<li><p><strong>Distribution.</strong> To: Margreat Ayad, Rawan Ibrahim, Sandra Shafik, Sara Awad, Mohamed Ewara, Farida Zayed, Bassel Abdelmaksoud, Dina Ramzi. CC: Nader Guirgis, Rashmi Patodia, Ahmed Hazem. The file contains personal data (birth dates, mobile numbers), so check the recipient list before sending.</p></li>
+</ul></div></details><details class="sec" id="s15"><summary><span class="num">15</span><span class="t">VBA Automation Reference</span><span class="cnt">9</span></summary><div class="body"><div class="tw"><table>
+<colgroup>
+<col style="width: 29%"/>
+<col style="width: 18%"/>
+<col style="width: 52%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Macro</strong></th>
+<th><strong>When to run</strong></th>
+<th><strong>What it does</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Create_New_Joiner_Emails</td>
+<td>On the joining date</td>
+<td>Creates the onboarding and training draft emails for employees whose Contract Start Date is today (<a class="xref" href="#s2" data-s="2">Section 2</a>). Skips and warns when the Official Email Address is empty.</td>
+</tr>
+<tr class="even">
+<td>Run_Protiviti_Extraction</td>
+<td>After joiners or data changes</td>
+<td>Controls Edge to export the Employee Master (Status ALL) and the Salary Report (company CM000118, Status ALL, from 01-Jan-2015, all Reporting MDs), repoints the Power Query to the Downloads folder, refreshes Employee_Master (2) and adds the Arabic job, department and management columns.</td>
+</tr>
+<tr class="odd">
+<td>GenerateRenewals</td>
+<td>When contracts are due</td>
+<td>Generates renewal contract PDFs and writes every outcome to Renewal_Log (<a class="xref" href="#s10" data-s="10">Section 10</a>).</td>
+</tr>
+<tr class="even">
+<td>HR_Letter, Embassy_Letter, Experience_Letter, Setup_Form</td>
+<td>On request</td>
+<td>Create HR letters as PDF (<a class="xref" href="#s13" data-s="13">Section 13</a>).</td>
+</tr>
+<tr class="odd">
+<td>Run_Employee_Master_Export</td>
+<td>Weekly</td>
+<td>Builds the master sheets and the weekly email draft (<a class="xref" href="#s14" data-s="14">Section 14</a>).</td>
+</tr>
+</tbody>
+</table></div><details class="sub"><summary>Prerequisites</summary><div class="body"><ul>
+<li><p>Excel workbook containing: sheet <strong>Employee_Master (2)</strong> with table <strong>Employee_Master__2</strong>; <strong>Table3</strong> (Arabic job titles); sheet <strong>Job Mapping</strong> with <strong>TableJobMapping</strong>; <strong>Renewal_Log</strong>; <strong>Translation_Cache</strong>; and sheet <strong>In The Pipeline</strong> with table <strong>in_the_pipeline</strong>.</p></li>
+<li><p>msedgedriver.exe in C:\WebDriver, a separate Edge automation profile (C:\EdgeAutomationProfile), and PSA sign-in with the Microsoft account shown on the “Pick an account” page. Ports 9222 and 55606 must be free.</p></li>
+<li><p>Desktop Outlook and Word, macros enabled, and every template and file path in the table in Section 16 present.</p></li>
+<li><p>Address translation in contract renewals uses Google Translate over the internet; results are stored in Translation_Cache.</p></li>
+</ul></div></details></div></details><details class="sec" id="s16"><summary><span class="num">16</span><span class="t">Hard-Coded Items to Update at Handover</span><span class="cnt">11</span></summary><div class="body"><div class="tw"><table>
+<colgroup>
+<col style="width: 37%"/>
+<col style="width: 28%"/>
+<col style="width: 34%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Item</strong></th>
+<th><strong>Where it is set</strong></th>
+<th><strong>Action when it changes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>User folder paths (C:\Users\SeifEldin.Ibrahim\OneDrive…) for EDCF, training .msg, contract and letter templates, output folders and the Extraction folder</td>
+<td>Constants at the top of each macro</td>
+<td>Update every path constant; the macros stop with a “not found” message otherwise.</td>
+</tr>
+<tr class="even">
+<td>Microsoft account name and email on the sign-in page</td>
+<td>Extraction and weekly macros (login routine)</td>
+<td>Replace with the new owner’s display name and email.</td>
+</tr>
+<tr class="odd">
+<td>Name, mobile, email and signature block</td>
+<td>Onboarding email macro and all three Power Automate flows</td>
+<td>Update in the macro and in each flow.</td>
+</tr>
+<tr class="even">
+<td>Photo-submission email and CC list (Margreat Ayad, Sara Awad)</td>
+<td>Onboarding email macro</td>
+<td>Update the email text and CC constants.</td>
+</tr>
+<tr class="odd">
+<td>Weekly report To/CC list</td>
+<td>Weekly export macro</td>
+<td>Update when the distribution changes.</td>
+</tr>
+<tr class="even">
+<td>KSA transfer codes PMFM-7100 and PMFM-7156</td>
+<td>Weekly export macro</td>
+<td>Add any new transfer code in the code.</td>
+</tr>
+<tr class="odd">
+<td>Year 2026 filter and sheet names “Resigned 2026” and “Transfer 2026”</td>
+<td>Weekly export macro</td>
+<td>Change the year in the code and sheet names each January.</td>
+</tr>
+<tr class="even">
+<td>Last Working Date in column AG</td>
+<td>Experience_Letter macro</td>
+<td>Keep that column in position AG, or change the code.</td>
+</tr>
+<tr class="odd">
+<td>Renewal window (60 days) and lookback (272 days)</td>
+<td>Constants in GenerateRenewals</td>
+<td>Adjust if policy changes; the code comment still says 90 days.</td>
+</tr>
+<tr class="even">
+<td>PSA company code CM000118 and status code PS000001</td>
+<td>Extraction and weekly macros</td>
+<td>Update if PSA codes change.</td>
+</tr>
+<tr class="odd">
+<td>ME Corridor.xlsx location and flow connections (Excel, Outlook, OneDrive)</td>
+<td>Three Power Automate flows</td>
+<td>Re-point connections or transfer flow ownership.</td>
+</tr>
+</tbody>
+</table></div></div></details><details class="sec" id="s17"><summary><span class="num">17</span><span class="t">Known Risks</span><span class="cnt">4</span></summary><div class="body"><ul>
+<li><p>The macros, ME Corridor tracker and all three flows depend on one person’s account and OneDrive; if that account is disabled, the flows stop. Move the tracker to a shared location and transfer flow ownership.</p></li>
+<li><p>The New Employee and Closure flows email only when Received On or Closure Entry Date equals the date the flow runs. A row dated otherwise, or a missed run, produces no email.</p></li>
+<li><p>Reporting is tied to 2026 (see Section 16), so the weekly counts become wrong from January 2027 without any warning.</p></li>
+<li><p>HR and Embassy letters use Group Join Date as the employment start, while contract renewals use Contract Start Date. Confirm the difference is intended.</p></li>
+</ul></div></details><div id="none">No matches found.</div></main>
+<script src="script.js"></script>
+</body>
+</html>
